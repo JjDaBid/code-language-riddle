@@ -208,6 +208,8 @@ document.addEventListener("DOMContentLoaded", function() {
     pista.textContent = "";
     pista2.textContent = "";
     pista3.textContent = "";
+    iconoPista2.textContent = ""
+    iconoPista2.textContent = ""
     palabraUsuarioInput.value = "";
     reiniciarBtn.style.display = "none";
     primerIntentoImg.style.display = "none";
