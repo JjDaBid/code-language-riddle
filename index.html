@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter:wght@300;500&family=Montserrat:wght@700&family=Quicksand:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="./img/img1.png" />
+</head>
+<body>
+    <header>
+        <img src="./img/img1.png" alt="">
+        <div class="header--tittle-container">
+            <h1>Adivina la palabra</h1>
+        </div>
+    </header>
+    <main>
+        <section class="clue-container">
+            <p class="clue-container--instruction">❗Tienes tres intentos para adivinar la palabra oculta. Se trata de un lenguaje de programación que debes adivinar. Intenta con tu lenguaje favorito y veamos si eres ganador.</p>            
+            <div class="clue-container--clue">
+                <div class="clue-container--clue-section">
+                    <span>🔎</span>
+                    <p id="pista"></p>
+                </div>                
+                <div class="clue-container--clue-section">
+                    <span id="span-clue2"></span>
+                    <p id="pista2"></p>
+                </div>
+                <div class="clue-container--clue-section">
+                    <span id="span-clue3"></span>
+                    <p id="pista3"></p>
+                </div>
+            </div>
+        </section>
+        <div class="form-container">
+            <form id="juegoForm">
+                <label for="palabraUsuario" class="form-label">✍🏻 Ingresa la palabra: 
+                    <input id="palabraUsuario" type="text" required>
+                </label>    
+                <input type="submit" value="Revisar" class="form-button">            
+            </form>
+        </div>
+        
+        <section class="result">
+            <div class="result-icon">
+                <img id="first-failed-image" class="first-failed-image" src="./img/img2.png" alt="">
+                <img id="second-failed-image" class="second-failed-image" src="./img/img3.png" alt="">
+                <img id="third-failed-image" class="second-failed-image" src="./img/img4.png" alt="">
+                <img id="winner-image" class="second-failed-image" src="./img/img5.png" alt="">
+            </div>
+            <div>
+                <p id="respuesta"></p>
+            </div>
+        </section>
+        <section>            
+            <input type="submit" id="new-try" value="Intentalo de Nuevo" class="new-try">
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© David Pinzon - 2023</p>
+    </footer>
+    <script src="./js/juego.js"></script>
+</body>
+    
+</html>
