@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
     pista2.textContent = "";
     pista3.textContent = "";
     iconoPista2.textContent = ""
-    iconoPista2.textContent = ""
+    iconoPista3.textContent = ""
     palabraUsuarioInput.value = "";
     reiniciarBtn.style.display = "none";
     primerIntentoImg.style.display = "none";
